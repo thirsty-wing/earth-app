@@ -1,9 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render 1`] = `
-<RCTSafeAreaView>
+<View
+  style={
+    {
+      "flex": 1,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "paddingTop": 0,
+    }
+  }
+>
   <Text>
     Hello World!
   </Text>
-</RCTSafeAreaView>
+</View>
 `;

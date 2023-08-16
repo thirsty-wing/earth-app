@@ -1,11 +1,22 @@
-import { Text, SafeAreaView } from "react-native";
+import { Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-const HomeScreen = () => {
+function HomeScreen() {
+  const insets = useSafeAreaInsets();
+
   return(
-    <SafeAreaView>
+    <View
+      style={{
+        paddingBottom: insets.bottom,
+        paddingLeft: insets.left,
+        paddingRight: insets.right,
+        paddingTop: insets.top,
+        flex: 1,
+      }}
+    >
       <Text>Hello World!</Text>
-    </SafeAreaView>
+    </View>
   );
-};
+}
 
 export default HomeScreen;
