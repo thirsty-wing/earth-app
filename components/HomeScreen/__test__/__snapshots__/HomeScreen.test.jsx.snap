@@ -4,6 +4,7 @@ exports[`should render 1`] = `
 <View
   style={
     {
+      "backgroundColor": "#003",
       "flex": 1,
       "paddingBottom": 0,
       "paddingLeft": 0,
@@ -12,8 +13,27 @@ exports[`should render 1`] = `
     }
   }
 >
-  <Text>
-    Hello World!
-  </Text>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "gap": 8,
+        "padding": 24,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#EEF",
+          "fontSize": 50,
+          "textAlign": "center",
+        }
+      }
+    >
+      What in the world? 🌎
+    </Text>
+  </View>
 </View>
 `;

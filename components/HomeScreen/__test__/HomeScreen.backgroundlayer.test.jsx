@@ -1,4 +1,4 @@
-import HomeScreen from "../HomeScreen.datalayer";
+import HomeScreen from "../HomeScreen.backgroundlayer";
 import { shallow } from "../../../utils/test/shallow";
 
 
