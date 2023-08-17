@@ -1,5 +1,3 @@
-//import safeAreaContextMock from "react-native-safe-area-context/jest/mock";
-
 import HomeScreen from "../HomeScreen";
 import { shallow } from "../../../utils/test/shallow";
 

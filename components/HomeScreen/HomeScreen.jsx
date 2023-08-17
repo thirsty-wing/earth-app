@@ -1,9 +1,13 @@
-import { Text, View } from "react-native";
+import { Text, View, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { theme } from "../../utils/theme";
+import Title from "./Title";
+
 
 function HomeScreen() {
   const insets = useSafeAreaInsets();
+
+  const paddingHorizontal = theme.spacing(3);
 
   return(
     <View
@@ -16,29 +20,23 @@ function HomeScreen() {
         left: 0,
         right: 0,
 
-        // Contain children in safe area
+        // contain children in safe area
         paddingTop: insets.top,
         paddingBottom: insets.bottom,
         paddingLeft: insets.left,
         paddingRight: insets.right,
       }}
     >
-      <View
+      <View style={{ paddingHorizontal }}>
+        <Title/>
+      </View>
+      <ScrollView
         style={{
-          alignItems: "center",
-          width: "100%",
           gap: theme.spacing(),
-          padding: theme.spacing(3),
+          paddingHorizontal,
         }}
       >
-        <Text style={{
-          color: theme.palette.text.primary,
-          fontSize: theme.sizes.text.title,
-          textAlign: "center",
-        }}>
-          What in the world? 🌎
-        </Text>
-      </View>
+      </ScrollView>
     </View>
   );
 }

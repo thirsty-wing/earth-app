@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with globeOrientation as 1 1`] = `
+<TouchableWithoutFeedback
+  onPress={[MockFunction]}
+  style={
+    {
+      "alignItems": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#EEF",
+        "fontSize": 50,
+        "textAlign": "center",
+      }
+    }
+  >
+    What in the world? 
+    🌎
+  </Text>
+</TouchableWithoutFeedback>
+`;
+
+exports[`should render with globeOrientation as 2 1`] = `
+<TouchableWithoutFeedback
+  onPress={[MockFunction]}
+  style={
+    {
+      "alignItems": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#EEF",
+        "fontSize": 50,
+        "textAlign": "center",
+      }
+    }
+  >
+    What in the world? 
+    🌍
+  </Text>
+</TouchableWithoutFeedback>
+`;
+
+exports[`should render with globeOrientation as 3 1`] = `
+<TouchableWithoutFeedback
+  onPress={[MockFunction]}
+  style={
+    {
+      "alignItems": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#EEF",
+        "fontSize": 50,
+        "textAlign": "center",
+      }
+    }
+  >
+    What in the world? 
+    🌏
+  </Text>
+</TouchableWithoutFeedback>
+`;
