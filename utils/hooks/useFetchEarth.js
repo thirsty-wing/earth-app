@@ -8,7 +8,7 @@ const fetch = createApolloFetch({
 /**
  * useFetchEarth.
  *
- * @param {string} query in graphql to be fetch the data
+ * @param {string} graphql query with fields to be fetched
  */
 export function useFetchEarth(query) {
 
