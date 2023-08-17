@@ -36,11 +36,7 @@ export function useFetchEarth(query) {
       fetchData();
   }, []);
 
-  const refetch = () => {
-    fetchData();
-  };
-
-  return [ data, loading, error, refetch ];
+  return [ data, loading, error, fetchData ];
 
 }
 
