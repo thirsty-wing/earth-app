@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render with globeOrientation as 1 1`] = `
-<TouchableWithoutFeedback
+<Memo(Pressable)
   onPress={[MockFunction]}
   style={
     {
@@ -22,11 +22,11 @@ exports[`should render with globeOrientation as 1 1`] = `
     What in the world? 
     🌎
   </Text>
-</TouchableWithoutFeedback>
+</Memo(Pressable)>
 `;
 
 exports[`should render with globeOrientation as 2 1`] = `
-<TouchableWithoutFeedback
+<Memo(Pressable)
   onPress={[MockFunction]}
   style={
     {
@@ -47,11 +47,11 @@ exports[`should render with globeOrientation as 2 1`] = `
     What in the world? 
     🌍
   </Text>
-</TouchableWithoutFeedback>
+</Memo(Pressable)>
 `;
 
 exports[`should render with globeOrientation as 3 1`] = `
-<TouchableWithoutFeedback
+<Memo(Pressable)
   onPress={[MockFunction]}
   style={
     {
@@ -72,5 +72,5 @@ exports[`should render with globeOrientation as 3 1`] = `
     What in the world? 
     🌏
   </Text>
-</TouchableWithoutFeedback>
+</Memo(Pressable)>
 `;

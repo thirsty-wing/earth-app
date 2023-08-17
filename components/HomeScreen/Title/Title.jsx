@@ -1,5 +1,6 @@
-import { Text, TouchableWithoutFeedback } from "react-native";
+import { Text, Pressable } from "react-native";
 import { theme } from "../../../utils/theme";
+import { getGlobe } from "./Title.utils";
 
 
 /**
@@ -16,12 +17,10 @@ function Title(props) {
     onPress,
   } = props;
 
-  const globe = globeOrientation === 1 ? "🌎" :
-    globeOrientation === 2 ? "🌍" :
-    "🌏";
+  const globe = getGlobe(globeOrientation);
 
   return(
-    <TouchableWithoutFeedback
+    <Pressable
       style={{
         alignItems: "center",
         width: "100%",
@@ -37,7 +36,7 @@ function Title(props) {
       >
         What in the world? {globe}
       </Text>
-    </TouchableWithoutFeedback>
+    </Pressable>
   );
 }
 
