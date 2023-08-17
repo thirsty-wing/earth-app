@@ -5,11 +5,15 @@ exports[`should render 1`] = `
   style={
     {
       "backgroundColor": "#003",
-      "flex": 1,
+      "bottom": 0,
+      "left": 0,
       "paddingBottom": 0,
       "paddingLeft": 0,
       "paddingRight": 0,
       "paddingTop": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
     }
   }
 >
@@ -17,9 +21,9 @@ exports[`should render 1`] = `
     style={
       {
         "alignItems": "center",
-        "flex": 1,
         "gap": 8,
         "padding": 24,
+        "width": "100%",
       }
     }
   >

@@ -8,18 +8,25 @@ function HomeScreen() {
   return(
     <View
       style={{
-        flex: 1,
+        // background fill the screen
+        backgroundColor: theme.palette.background.primary,
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+
+        // Contain children in safe area
+        paddingTop: insets.top,
         paddingBottom: insets.bottom,
         paddingLeft: insets.left,
         paddingRight: insets.right,
-        paddingTop: insets.top,
-        backgroundColor: theme.palette.background.primary,
       }}
     >
       <View
         style={{
           alignItems: "center",
-          flex: 1,
+          width: "100%",
           gap: theme.spacing(),
           padding: theme.spacing(3),
         }}
