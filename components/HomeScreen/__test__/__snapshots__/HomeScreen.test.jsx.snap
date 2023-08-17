@@ -4,16 +4,35 @@ exports[`should render 1`] = `
 <View
   style={
     {
-      "flex": 1,
+      "backgroundColor": "#003",
+      "bottom": 0,
+      "left": 0,
       "paddingBottom": 0,
       "paddingLeft": 0,
       "paddingRight": 0,
       "paddingTop": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
     }
   }
 >
-  <Text>
-    Hello World!
-  </Text>
+  <View
+    style={
+      {
+        "paddingHorizontal": 24,
+      }
+    }
+  >
+    <TitleDatalayer />
+  </View>
+  <ScrollView
+    style={
+      {
+        "gap": 8,
+        "paddingHorizontal": 24,
+      }
+    }
+  />
 </View>
 `;
