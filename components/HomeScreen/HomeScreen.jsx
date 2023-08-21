@@ -1,4 +1,4 @@
-import { Text, View, ScrollView } from "react-native";
+import { View, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { theme } from "../../utils/theme";
 import Title from "./Title";

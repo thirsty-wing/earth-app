@@ -19,6 +19,12 @@ function ContinentsList(props) {
     refetch,
   } = props;
 
+  const isLoading = loading;
+
+  const isError = !isLoading && error;
+
+  const isOk = !isLoading && !isError;
+
   return(
     <View
       style={{
@@ -26,11 +32,18 @@ function ContinentsList(props) {
         gap: theme.spacing(),
       }}
     >
-      { loading ? (
+
+      { isLoading &&
         <ActivityIndicator size="large"/>
-      ) : error ? (
+      }
+
+
+      { isError &&
         <Text>Something went wrong</Text>
-      ) : (
+      }
+
+
+      { isOk &&
         data?.continents?.map(continent => (
           <Pressable
             key={`continent-${continent.code}`}
@@ -40,11 +53,15 @@ function ContinentsList(props) {
               padding: 16
             }}
           >
-            <Text style={{ color: theme.palette.text.primary }} >{continent.name}</Text>
-            <Text style={{ color: theme.palette.text.primary }} >{continent.code}</Text>
+            <Text style={{ color: theme.palette.text.primary }}>
+              {continent.name}
+            </Text>
+            <Text style={{ color: theme.palette.text.primary }}>
+              {continent.code}
+            </Text>
           </Pressable>
         ))
-      )}
+      }
 
     </View>
   );
