@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render error 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "gap": 8,
+    }
+  }
+>
+  <Text>
+    Something went wrong
+  </Text>
+</View>
+`;
+
+exports[`should render loading 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "gap": 8,
+    }
+  }
+>
+  <ActivityIndicator
+    size="large"
+  />
+</View>
+`;
+
+exports[`should render with continents 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "gap": 8,
+    }
+  }
+>
+  <Memo(Pressable)
+    style={
+      {
+        "backgroundColor": "#115",
+        "borderRadius": 16,
+        "padding": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#EEF",
+        }
+      }
+    >
+      Pangea
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#EEF",
+        }
+      }
+    >
+      PG
+    </Text>
+  </Memo(Pressable)>
+  <Memo(Pressable)
+    style={
+      {
+        "backgroundColor": "#115",
+        "borderRadius": 16,
+        "padding": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#EEF",
+        }
+      }
+    >
+      Gondwana
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#EEF",
+        }
+      }
+    >
+      GW
+    </Text>
+  </Memo(Pressable)>
+  <Memo(Pressable)
+    style={
+      {
+        "backgroundColor": "#115",
+        "borderRadius": 16,
+        "padding": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#EEF",
+        }
+      }
+    >
+      Pannotia
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#EEF",
+        }
+      }
+    >
+      PN
+    </Text>
+  </Memo(Pressable)>
+</View>
+`;
