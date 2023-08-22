@@ -1,3 +1,3 @@
-import ContinentScreen from "../../components/ContinentScreen/ContinentScreen";
+import ContinentScreen from "../../components/ContinentScreen";
 
 export default ContinentScreen;

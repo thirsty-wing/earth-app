@@ -7,7 +7,7 @@ it("should rotate from 1 to 2", () => {
 
   const rotateGlobe = yieldRotateGlobe({
     globeOrientation: num,
-    setGlobeOrientation: n => { num = n }
+    setGlobeOrientation: n => { num = n; }
   });
 
   rotateGlobe();
@@ -21,7 +21,7 @@ it("should rotate from 2 to 3", () => {
 
   const rotateGlobe = yieldRotateGlobe({
     globeOrientation: num,
-    setGlobeOrientation: n => { num = n }
+    setGlobeOrientation: n => { num = n; }
   });
 
   rotateGlobe();
@@ -35,7 +35,7 @@ it("should rotate from 3 to 1", () => {
 
   const rotateGlobe = yieldRotateGlobe({
     globeOrientation: num,
-    setGlobeOrientation: n => { num = n }
+    setGlobeOrientation: n => { num = n; }
   });
 
   rotateGlobe();

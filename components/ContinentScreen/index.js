@@ -1,3 +1,3 @@
-import HomeScreen from "./HomeScreen";
+import ContinentScreen from "./ContinentScreen.datalayer";
 
-export default HomeScreen;
+export default ContinentScreen;
