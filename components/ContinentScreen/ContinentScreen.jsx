@@ -5,23 +5,19 @@ import styles from "./ContinentScreen.styles";
 
 
 /**
- * ContinentScreen.
+ * Shows the continent screen
  *
  * @param {object} props
- * @param {object} [props.data={}]
- * @param {boolean} [props.isError=false]
- * @param {boolean} [props.isLoading=false]
- * @param {boolean} [props.isOk=true]
- * @param {object} props.router
+ * @param {object} [props.data]
+ * @param {"LOADING"|"ERROR"|"OK"} [props.responseStatus = "OK"]
+ * @param {object} [props.router]
  * @returns {JSX.Element}
  */
 function ContinentScreen(props) {
 
   const {
-    data = {},
-    isError = false,
-    isLoading = false,
-    isOk = true,
+    data,
+    responseStatus = "OK",
     router,
   } = props;
 
@@ -29,19 +25,20 @@ function ContinentScreen(props) {
   return(
     <BackgroundView>
       <ScrollView style={styles.scrollView}>
-        { isLoading &&
+
+        { responseStatus === "LOADING" &&
           <ActivityIndicator size="large" />
         }
 
 
-        { isError &&
+        { responseStatus === "ERROR" &&
             <Text style={styles.plainText}>
               Something went wrong
             </Text>
         }
 
 
-        { isOk &&
+        { responseStatus === "OK" &&
           <>
             <View style={styles.topView}>
               <Pressable
@@ -66,6 +63,7 @@ function ContinentScreen(props) {
             </Text>
           </>
         }
+
       </ScrollView>
     </BackgroundView>
   );

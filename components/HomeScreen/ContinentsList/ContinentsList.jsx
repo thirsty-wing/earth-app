@@ -4,29 +4,29 @@ import { useRouter } from "expo-router";
 
 
 /**
- * ContinentsList.
+ * List of continents as pressables
  *
  * @param {object} props
- * @param {object} props.data
- * @param {boolean} props.loading
- * @param {function} props.refetch
+ * @param {object} [props.data]
+ * @param {"LOADING"|"ERROR"|"OK"} [props.responseStatus = "OK"]
  */
 function ContinentsList(props) {
 
   const {
-    data = {},
-    error = false,
-    loading = false,
-    refetch,
+    data,
+    responseStatus = "OK",
   } = props;
 
-  const isLoading = loading;
-
-  const isError = !isLoading && error;
-
-  const isOk = !isLoading && !isError;
-
   const router = useRouter();
+
+  /**
+   * creates a function to be called in the continent Pressable
+   *
+   * @param {string} code
+   */
+  function makeDoNavigate(code) {
+    return () => router.push(`continent/${code}`);
+  }
 
   return(
     <View
@@ -36,17 +36,17 @@ function ContinentsList(props) {
       }}
     >
 
-      { isLoading &&
+      { responseStatus === "LOADING" &&
         <ActivityIndicator size="large"/>
       }
 
 
-      { isError &&
+      { responseStatus === "ERROR" &&
         <Text>Something went wrong</Text>
       }
 
 
-      { isOk &&
+      { responseStatus === "OK" &&
         data?.continents?.map(continent => (
           <Pressable
             key={`continent-${continent.code}`}
@@ -55,7 +55,7 @@ function ContinentsList(props) {
               borderRadius: 16,
               padding: 16
             }}
-            onPress={() => router.push(`continent/${continent.code}`)}
+            onPress={makeDoNavigate(continent.code)}
           >
             <Text style={{ color: theme.palette.text.primary }}>
               {continent.name}

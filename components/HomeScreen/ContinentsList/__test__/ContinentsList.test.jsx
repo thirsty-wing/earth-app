@@ -26,13 +26,13 @@ it("should render with continents", () => {
 });
 
 it("should render loading", () => {
-  const content = shallow(<ContinentsList loading />);
+  const content = shallow(<ContinentsList responseStatus="LOADING"/>);
 
   expect(content).toMatchSnapshot();
-})
+});
 
 it("should render error", () => {
-  const content = shallow(<ContinentsList error />);
+  const content = shallow(<ContinentsList responseStatus="ERROR"/>);
 
   expect(content).toMatchSnapshot();
-})
+});
