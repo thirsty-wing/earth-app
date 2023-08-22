@@ -2,7 +2,7 @@ import { createApolloFetch } from "apollo-fetch";
 import { useState, useEffect } from "react";
 
 const fetch = createApolloFetch({
-  uri: 'https://countries.trevorblades.com/graphql',
+  uri: "https://countries.trevorblades.com/graphql",
 });
 
 /**
@@ -33,7 +33,7 @@ export function useFetchEarth(query) {
   }
 
   useEffect(() => {
-      fetchData();
+    fetchData();
   }, []);
 
   return [ data, loading, error, fetchData ];

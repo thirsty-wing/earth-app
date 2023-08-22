@@ -1,5 +1,6 @@
 import { Text, View, ActivityIndicator, Pressable } from "react-native";
 import { theme } from "../../../utils/theme";
+import { useRouter } from "expo-router";
 
 
 /**
@@ -24,6 +25,8 @@ function ContinentsList(props) {
   const isError = !isLoading && error;
 
   const isOk = !isLoading && !isError;
+
+  const router = useRouter();
 
   return(
     <View
@@ -52,6 +55,7 @@ function ContinentsList(props) {
               borderRadius: 16,
               padding: 16
             }}
+            onPress={() => router.push(`continent/${continent.code}`)}
           >
             <Text style={{ color: theme.palette.text.primary }}>
               {continent.name}
