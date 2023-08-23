@@ -1,7 +1,7 @@
 {
   "name": "earth-app",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "node_modules/expo/AppEntry.js",
   "type": "module",
   "scripts": {
     "start": "expo start",
@@ -12,12 +12,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/native-stack": "^6.9.13",
     "@types/react": "~18.2.14",
     "apollo-fetch": "^0.7.0",
     "expo": "^49.0.3",
     "expo-constants": "~14.4.2",
     "expo-linking": "~5.0.2",
-    "expo-router": "2.0.0",
     "expo-splash-screen": "~0.20.4",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",

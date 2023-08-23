@@ -12,7 +12,7 @@ import styles from "./ContinentScreen.styles";
  * @param {boolean} [props.isError=false]
  * @param {boolean} [props.isLoading=false]
  * @param {boolean} [props.isOk=true]
- * @param {object} props.router
+ * @param {object} [props.navigation]
  * @returns {JSX.Element}
  */
 function ContinentScreen(props) {
@@ -22,7 +22,7 @@ function ContinentScreen(props) {
     isError = false,
     isLoading = false,
     isOk = true,
-    router,
+    navigation,
   } = props;
 
 
@@ -46,7 +46,7 @@ function ContinentScreen(props) {
             <View style={styles.topView}>
               <Pressable
                 style={styles.backPressable}
-                onPress={router?.back}
+                onPress={navigation?.goBack}
               >
                 <Text style={styles.plainText}>
                   Back

@@ -4,9 +4,6 @@
     "web": {
       "bundler": "metro"
     },
-    "plugins": [
-      "expo-router"
-    ],
     "name": "earth-app",
     "slug": "earth-app"
   }

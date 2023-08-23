@@ -1,11 +1,14 @@
-import { useLocalSearchParams, useRouter } from "expo-router";
-
 import useFetchEarth from "../../utils/hooks/useFetchEarth";
 import ContinentScreen from "./ContinentScreen";
 
-function ContinentScreenDatalayer() {
-  const params = useLocalSearchParams();
-  const router = useRouter();
+function ContinentScreenDatalayer(props) {
+
+  const {
+    route,
+    navigation,
+  } = props;
+
+  const code = route.params.code;
 
   const [
     data,
@@ -13,7 +16,7 @@ function ContinentScreenDatalayer() {
     error,
   ] = useFetchEarth(
     `query{
-      continent(code: "${params.code}") {
+      continent(code: "${code}") {
         name
         code
         countries {
@@ -29,15 +32,13 @@ function ContinentScreenDatalayer() {
 
   const isOk = !isLoading && !isError;
 
-  console.log("datalayer data:", data);
-
   return(
     <ContinentScreen
       data={data}
       isError={isError}
       isLoading={isLoading}
       isOk={isOk}
-      router={router}
+      navigation={navigation}
     />
   );
 }
