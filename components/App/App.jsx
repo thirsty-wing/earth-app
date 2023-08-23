@@ -20,7 +20,7 @@ export function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer linking={linking}>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Home" component={HomeScreen}/>
           <Stack.Screen name="Continent" component={ContinentScreen}/>
         </Stack.Navigator>
