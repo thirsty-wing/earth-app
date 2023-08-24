@@ -3,6 +3,7 @@
 exports[`should render 1`] = `
 <ContinentsList
   data={{}}
-  responseStatus="LOADING"
+  error={{}}
+  loading={false}
 />
 `;

@@ -10,16 +10,22 @@ import { yieldDoNavigate } from "./ContinentsList.utils";
  *
  * @param {object} props
  * @param {object} [props.data]
- * @param {"LOADING"|"ERROR"|"OK"} [props.responseStatus = "OK"]
+ * @param {object} [props.error] ApolloError
+ * @param {boolean} [props.loading = false]
  */
 function ContinentsList(props) {
 
   const {
     data,
-    responseStatus = "OK",
+    error,
+    loading: showLoading = false,
   } = props;
 
   const navigation = useNavigation();
+
+  const showError = !showLoading && error;
+
+  const showData = !showLoading && !showError;
 
   return(
     <View
@@ -29,17 +35,17 @@ function ContinentsList(props) {
       }}
     >
 
-      { responseStatus === "LOADING" &&
+      { showLoading &&
         <ActivityIndicator size="large"/>
       }
 
 
-      { responseStatus === "ERROR" &&
+      { showError &&
         <Text>Something went wrong</Text>
       }
 
 
-      { responseStatus === "OK" &&
+      { showData &&
         data?.continents?.map(continent => (
           <Pressable
             key={`continent-${continent.code}`}

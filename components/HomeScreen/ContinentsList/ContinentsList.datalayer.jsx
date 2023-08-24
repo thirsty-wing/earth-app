@@ -1,6 +1,16 @@
-import useFetchEarth from "../../../utils/hooks/useFetchEarth";
+import { gql, useQuery } from "@apollo/client";
+
 import ContinentsList from "./ContinentsList";
 
+
+const GET_CONTINENTS = gql`
+  query{
+    continents {
+      name
+      code
+    }
+  }
+`;
 
 /**
  * List of continents as pressables with data
@@ -9,22 +19,17 @@ import ContinentsList from "./ContinentsList";
  */
 function ContinentsListDatalayer() {
 
-  const [
+  const {
     data,
-    responseStatus,
-  ] = useFetchEarth(
-    `query{
-      continents {
-        name
-        code
-      }
-    }`
-  );
+    error,
+    loading,
+  } = useQuery(GET_CONTINENTS);
 
   return(
     <ContinentsList
       data={data}
-      responseStatus={responseStatus}
+      error={error}
+      loading={loading}
     />
   );
 }
