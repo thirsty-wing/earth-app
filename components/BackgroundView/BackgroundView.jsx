@@ -9,7 +9,7 @@ import styles from "./BackgroundView.styles";
  * children in the safe area.
  *
  * @param {object} props
- * @param {JSX.Element[]} [props.children] children elements to render inside
+ * @param {JSX.Element|JSX.Element[]} [props.children] children elements to render inside
  * @returns {JSX.Element}
  */
 function BackgroundView(props) {

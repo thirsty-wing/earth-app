@@ -8,17 +8,17 @@ import styles from "./ContinentScreen.styles";
  * Shows the continent screen
  *
  * @param {object} props
- * @param {object} [props.data]
+ * @param {object} [props.data={}]
  * @param {"LOADING"|"ERROR"|"OK"} [props.responseStatus = "OK"]
- * @param {object} [props.router]
+ * @param {object} [props.navigation]
  * @returns {JSX.Element}
  */
 function ContinentScreen(props) {
 
   const {
-    data,
+    data = {},
     responseStatus = "OK",
-    router,
+    navigation,
   } = props;
 
 
@@ -43,7 +43,7 @@ function ContinentScreen(props) {
             <View style={styles.topView}>
               <Pressable
                 style={styles.backPressable}
-                onPress={router?.back}
+                onPress={navigation?.goBack}
               >
                 <Text style={styles.plainText}>
                   Back

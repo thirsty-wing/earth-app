@@ -1,6 +1,12 @@
 import ContinentsList from "../ContinentsList";
 import { shallow } from "../../../../utils/test/shallow";
 
+jest.mock("@react-navigation/native", () => ({
+  useNavigation: () => ({
+    navigate: jest.fn(),
+  }),
+}));
+
 
 it("should render with continents", () => {
   const content = shallow(<ContinentsList

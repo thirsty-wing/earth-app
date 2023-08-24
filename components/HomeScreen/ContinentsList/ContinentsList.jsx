@@ -1,5 +1,5 @@
 import { Text, View, ActivityIndicator, Pressable } from "react-native";
-import { useRouter } from "expo-router";
+import { useNavigation } from "@react-navigation/native";
 
 import { theme } from "../../../utils/theme";
 import { yieldDoNavigate } from "./ContinentsList.utils";
@@ -19,7 +19,7 @@ function ContinentsList(props) {
     responseStatus = "OK",
   } = props;
 
-  const router = useRouter();
+  const navigation = useNavigation();
 
   return(
     <View
@@ -48,7 +48,7 @@ function ContinentsList(props) {
               borderRadius: 16,
               padding: 16
             }}
-            onPress={yieldDoNavigate({ router, code: continent.code })}
+            onPress={yieldDoNavigate({ navigation, code: continent.code })}
           >
             <Text style={{ color: theme.palette.text.primary }}>
               {continent.name}

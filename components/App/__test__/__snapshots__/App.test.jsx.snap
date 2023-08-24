@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<SafeAreaProvider>
+  <ForwardRef(NavigationContainerInner)
+    linking={
+      {
+        "config": {
+          "screens": {
+            "Continent": "continent/:code",
+            "Home": "",
+          },
+        },
+      }
+    }
+  >
+    <mockConstructor
+      screenOptions={
+        {
+          "headerShown": false,
+        }
+      }
+    >
+      <mockConstructor
+        component={[Function]}
+        name="Home"
+      />
+      <mockConstructor
+        component={[Function]}
+        name="Continent"
+      />
+    </mockConstructor>
+  </ForwardRef(NavigationContainerInner)>
+</SafeAreaProvider>
+`;
