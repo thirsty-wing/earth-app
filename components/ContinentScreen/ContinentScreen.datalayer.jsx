@@ -18,7 +18,7 @@ function ContinentScreenDatalayer(props) {
     navigation,
   } = props;
 
-  const code = route.params.code;
+  const code = route?.params?.code;
 
   const [
     data,
