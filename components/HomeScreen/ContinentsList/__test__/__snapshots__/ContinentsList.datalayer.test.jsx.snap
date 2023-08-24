@@ -3,8 +3,6 @@
 exports[`should render 1`] = `
 <ContinentsList
   data={{}}
-  error={null}
-  loading={false}
-  refetch={[Function]}
+  responseStatus="LOADING"
 />
 `;

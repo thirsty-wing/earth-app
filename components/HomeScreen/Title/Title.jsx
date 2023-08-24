@@ -4,16 +4,17 @@ import { getGlobe } from "./Title.utils";
 
 
 /**
- * Title.
+ * Title of the home screen comprising a pressable which rotates a globe emoji
  *
  * @param {object} props
- * @param {number} props.globeOrientation
- * @param {Function} props.onPress
+ * @param {1|2|3} [props.globeOrientation = 1]
+ * @param {Function} [props.onPress]
+ * @returns {JSX.Element}
  */
 function Title(props) {
 
   const {
-    globeOrientation,
+    globeOrientation = 1,
     onPress,
   } = props;
 

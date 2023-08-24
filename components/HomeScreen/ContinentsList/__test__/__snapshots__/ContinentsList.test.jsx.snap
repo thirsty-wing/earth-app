@@ -40,6 +40,7 @@ exports[`should render with continents 1`] = `
   }
 >
   <Memo(Pressable)
+    onPress={[Function]}
     style={
       {
         "backgroundColor": "#115",
@@ -68,6 +69,7 @@ exports[`should render with continents 1`] = `
     </Text>
   </Memo(Pressable)>
   <Memo(Pressable)
+    onPress={[Function]}
     style={
       {
         "backgroundColor": "#115",
@@ -96,6 +98,7 @@ exports[`should render with continents 1`] = `
     </Text>
   </Memo(Pressable)>
   <Memo(Pressable)
+    onPress={[Function]}
     style={
       {
         "backgroundColor": "#115",

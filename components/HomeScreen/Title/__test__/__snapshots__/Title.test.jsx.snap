@@ -2,7 +2,6 @@
 
 exports[`should render with globeOrientation as 1 1`] = `
 <Memo(Pressable)
-  onPress={[MockFunction]}
   style={
     {
       "alignItems": "center",
@@ -27,7 +26,6 @@ exports[`should render with globeOrientation as 1 1`] = `
 
 exports[`should render with globeOrientation as 2 1`] = `
 <Memo(Pressable)
-  onPress={[MockFunction]}
   style={
     {
       "alignItems": "center",
@@ -52,7 +50,6 @@ exports[`should render with globeOrientation as 2 1`] = `
 
 exports[`should render with globeOrientation as 3 1`] = `
 <Memo(Pressable)
-  onPress={[MockFunction]}
   style={
     {
       "alignItems": "center",

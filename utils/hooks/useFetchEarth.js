@@ -8,27 +8,27 @@ const fetch = createApolloFetch({
 /**
  * useFetchEarth.
  *
- * @param {string} graphql query with fields to be fetched
+ * @param {string} query graphql query string with fields to be fetched
+ *
+ * @returns {[object,"LOADING"|"ERROR"|"OK",function]} response data, response status, refetch callback
  */
 export function useFetchEarth(query) {
 
   const [data, setData] = useState({});
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+
+  /** @type ["LOADING"|"ERROR"|"OK",function] */
+  const [responseStatus, setResponseStatus] = useState("LOADING");
 
   async function fetchData() {
 
-    setLoading(true);
-    setError(false);
+    setResponseStatus("LOADING");
 
     fetch({ query }).then(response => {
       setData(response.data);
-      setLoading(false);
-      setError(false);
+      setResponseStatus("OK");
     }).catch(error => {
       console.error(`error fetching. query: ${query}, error: ${error}`);
-      setLoading(false);
-      setError(true);
+      setResponseStatus("ERROR");
     });
   }
 
@@ -36,7 +36,7 @@ export function useFetchEarth(query) {
     fetchData();
   }, []);
 
-  return [ data, loading, error, fetchData ];
+  return [ data, responseStatus, fetchData ];
 
 }
 

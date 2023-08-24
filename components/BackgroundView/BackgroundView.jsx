@@ -5,7 +5,7 @@ import styles from "./BackgroundView.styles";
 
 
 /**
- * BackgroundView. Background View which covers the whole screen and contains
+ * View which covers the whole screen with a background color and contains
  * children in the safe area.
  *
  * @param {object} props

@@ -1,0 +1,22 @@
+{
+  "plugins": [],
+  "recurseDepth": 10,
+  "opts": {
+    "template": "node_modules/docdash",
+    "recurse": true
+  },
+  "source": {
+    "exclude": ["node_modules", "jsdocConf.cjs"],
+    "include": ["."],
+    "includePattern": ".+\\.js(doc|x)?$"
+  },
+  "sourceType": "module",
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc","closure"]
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}
