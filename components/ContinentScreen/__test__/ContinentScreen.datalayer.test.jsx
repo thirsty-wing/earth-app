@@ -2,8 +2,13 @@ import ContinentScreenDatalayer from "../ContinentScreen.datalayer";
 import { shallow } from "../../../utils/test/shallow";
 
 
-jest.mock("apollo-fetch", () => ({
-  createApolloFetch: () => jest.fn(),
+jest.mock("@apollo/client", () => ({
+  gql: () => jest.fn(),
+  useQuery: () => ({
+    data: {},
+    error: {},
+    loading: false,
+  }),
 }));
 
 it("should render", () => {

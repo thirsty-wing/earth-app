@@ -19,13 +19,13 @@ it("should render", () => {
 });
 
 it("should render with LOADING response status", () => {
-  const content = shallow(<ContinentScreen responseStatus="LOADING"/>);
+  const content = shallow(<ContinentScreen loading/>);
 
   expect(content).toMatchSnapshot();
 });
 
 it("should render with ERROR response status", () => {
-  const content = shallow(<ContinentScreen responseStatus="ERROR"/>);
+  const content = shallow(<ContinentScreen error={{}}/>);
 
   expect(content).toMatchSnapshot();
 });

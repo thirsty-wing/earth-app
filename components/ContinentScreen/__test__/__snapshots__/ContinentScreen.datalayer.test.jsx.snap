@@ -3,7 +3,8 @@
 exports[`should render 1`] = `
 <ContinentScreen
   data={{}}
+  error={{}}
+  loading={false}
   navigation={{}}
-  responseStatus="LOADING"
 />
 `;
