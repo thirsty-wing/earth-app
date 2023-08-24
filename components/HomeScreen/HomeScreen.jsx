@@ -6,6 +6,11 @@ import ContinentsList from "./ContinentsList";
 
 
 
+/**
+ * Constitutes the home screen
+ *
+ * @returns {JSX.Element}
+ */
 function HomeScreen() {
 
   const paddingHorizontal = theme.spacing(3);

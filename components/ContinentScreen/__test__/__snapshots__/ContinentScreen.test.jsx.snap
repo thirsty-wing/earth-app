@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<BackgroundView>
+  <ScrollView
+    style={
+      {
+        "gap": 8,
+        "paddingHorizontal": 24,
+      }
+    }
+  >
+    <React.Fragment>
+      <View
+        style={
+          {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          }
+        }
+      >
+        <Memo(Pressable)
+          style={
+            {
+              "backgroundColor": "#01A",
+              "padding": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#EEF",
+              }
+            }
+          >
+            Back
+          </Text>
+        </Memo(Pressable)>
+        <View
+          style={
+            {
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#EEF",
+                "fontSize": 35,
+              }
+            }
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Two letter code: 
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Number of countries: 
+      </Text>
+    </React.Fragment>
+  </ScrollView>
+</BackgroundView>
+`;
+
+exports[`should render with ERROR response status 1`] = `
+<BackgroundView>
+  <ScrollView
+    style={
+      {
+        "gap": 8,
+        "paddingHorizontal": 24,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#EEF",
+        }
+      }
+    >
+      Something went wrong
+    </Text>
+  </ScrollView>
+</BackgroundView>
+`;
+
+exports[`should render with LOADING response status 1`] = `
+<BackgroundView>
+  <ScrollView
+    style={
+      {
+        "gap": 8,
+        "paddingHorizontal": 24,
+      }
+    }
+  >
+    <ActivityIndicator
+      size="large"
+    />
+  </ScrollView>
+</BackgroundView>
+`;

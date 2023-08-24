@@ -1,6 +1,16 @@
 import useFetchEarth from "../../utils/hooks/useFetchEarth";
 import ContinentScreen from "./ContinentScreen";
 
+/**
+ * Shows the continent screen with data
+ *
+ * @param {object} props
+ * @param {object} props.route
+ * @param {object} props.route.params
+ * @param {string} props.route.params.code
+ * @param {object} props.navigation
+ * @returns {JSX.Element}
+ */
 function ContinentScreenDatalayer(props) {
 
   const {
@@ -12,8 +22,7 @@ function ContinentScreenDatalayer(props) {
 
   const [
     data,
-    isLoading,
-    error,
+    responseStatus,
   ] = useFetchEarth(
     `query{
       continent(code: "${code}") {
@@ -28,16 +37,10 @@ function ContinentScreenDatalayer(props) {
     }`
   );
 
-  const isError = !isLoading && error;
-
-  const isOk = !isLoading && !isError;
-
   return(
     <ContinentScreen
       data={data}
-      isError={isError}
-      isLoading={isLoading}
-      isOk={isOk}
+      responseStatus={responseStatus}
       navigation={navigation}
     />
   );
