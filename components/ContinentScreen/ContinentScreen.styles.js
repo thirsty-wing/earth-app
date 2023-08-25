@@ -6,7 +6,8 @@ import { theme } from "../../utils/theme";
 const styles = StyleSheet.create({
   scrollView: {
     gap: theme.spacing(),
-    paddingHorizontal: theme.spacing(3),
+    padding: theme.spacing(3),
+    flex: 1,
   },
   plainText: {
     color: theme.palette.text.primary,
@@ -16,10 +17,30 @@ const styles = StyleSheet.create({
     width: "100%",
     justifyContent: "flex-start",
     flexDirection: "row",
+    paddingHorizontal: theme.spacing(3),
   },
   backPressable: {
     padding: 16,
     backgroundColor: theme.palette.action.primary,
+  },
+  svgView: {
+    backgroundColor: theme.palette.text.primary,
+    padding: theme.spacing(),
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    borderRadius: 16,
+  },
+  svgViewWidthWrapper: {
+    width: "100%",
+  },
+  svgViewHeightWrapper: {
+    paddingBottom: "100%",
   },
   titleView: {
     flex: 1,

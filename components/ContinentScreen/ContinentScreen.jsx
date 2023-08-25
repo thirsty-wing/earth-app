@@ -1,6 +1,7 @@
 import { ActivityIndicator, ScrollView, Text, View, Pressable } from "react-native";
 
 import BackgroundView from "../BackgroundView";
+import ContinentSvg from "../ContinentSvg";
 import styles from "./ContinentScreen.styles";
 
 
@@ -30,6 +31,21 @@ function ContinentScreen(props) {
 
   return(
     <BackgroundView>
+      <View style={styles.topView}>
+        <Pressable
+          style={styles.backPressable}
+          onPress={navigation?.goBack}
+        >
+          <Text style={styles.plainText}>
+                  Back
+          </Text>
+        </Pressable>
+        <View style={styles.titleView}>
+          <Text style={styles.titleText}>
+            {data?.continent?.name}
+          </Text>
+        </View>
+      </View>
       <ScrollView style={styles.scrollView}>
 
         { showLoading  &&
@@ -46,19 +62,11 @@ function ContinentScreen(props) {
 
         { showData &&
           <>
-            <View style={styles.topView}>
-              <Pressable
-                style={styles.backPressable}
-                onPress={navigation?.goBack}
-              >
-                <Text style={styles.plainText}>
-                  Back
-                </Text>
-              </Pressable>
-              <View style={styles.titleView}>
-                <Text style={styles.titleText}>
-                  {data?.continent?.name}
-                </Text>
+            <View style={styles.svgViewWidthWrapper}>
+              <View style={styles.svgViewHeightWrapper}>
+                <View style={styles.svgView}>
+                  <ContinentSvg code={data?.continent?.code}/>
+                </View>
               </View>
             </View>
             <Text style={styles.plainText}>

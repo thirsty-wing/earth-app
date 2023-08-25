@@ -2,11 +2,60 @@
 
 exports[`should render 1`] = `
 <BackgroundView>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "width": "100%",
+      }
+    }
+  >
+    <Memo(Pressable)
+      style={
+        {
+          "backgroundColor": "#049",
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Back
+      </Text>
+    </Memo(Pressable)>
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 25,
+          }
+        }
+      />
+    </View>
+  </View>
   <ScrollView
     style={
       {
+        "flex": 1,
         "gap": 8,
-        "paddingHorizontal": 24,
+        "padding": 24,
       }
     }
   >
@@ -14,48 +63,36 @@ exports[`should render 1`] = `
       <View
         style={
           {
-            "display": "flex",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
             "width": "100%",
           }
         }
       >
-        <Memo(Pressable)
-          style={
-            {
-              "backgroundColor": "#049",
-              "padding": 16,
-            }
-          }
-        >
-          <Text
-            style={
-              {
-                "color": "#EEF",
-              }
-            }
-          >
-            Back
-          </Text>
-        </Memo(Pressable)>
         <View
           style={
             {
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "center",
+              "paddingBottom": "100%",
             }
           }
         >
-          <Text
+          <View
             style={
               {
-                "color": "#EEF",
-                "fontSize": 25,
+                "alignItems": "center",
+                "backgroundColor": "#EEF",
+                "borderRadius": 16,
+                "bottom": 0,
+                "display": "flex",
+                "justifyContent": "center",
+                "left": 0,
+                "padding": 8,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
               }
             }
-          />
+          >
+            <ContinentSvg />
+          </View>
         </View>
       </View>
       <Text
@@ -83,11 +120,60 @@ exports[`should render 1`] = `
 
 exports[`should render with ERROR response status 1`] = `
 <BackgroundView>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "width": "100%",
+      }
+    }
+  >
+    <Memo(Pressable)
+      style={
+        {
+          "backgroundColor": "#049",
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Back
+      </Text>
+    </Memo(Pressable)>
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 25,
+          }
+        }
+      />
+    </View>
+  </View>
   <ScrollView
     style={
       {
+        "flex": 1,
         "gap": 8,
-        "paddingHorizontal": 24,
+        "padding": 24,
       }
     }
   >
@@ -106,11 +192,60 @@ exports[`should render with ERROR response status 1`] = `
 
 exports[`should render with LOADING response status 1`] = `
 <BackgroundView>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "width": "100%",
+      }
+    }
+  >
+    <Memo(Pressable)
+      style={
+        {
+          "backgroundColor": "#049",
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Back
+      </Text>
+    </Memo(Pressable)>
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 25,
+          }
+        }
+      />
+    </View>
+  </View>
   <ScrollView
     style={
       {
+        "flex": 1,
         "gap": 8,
-        "paddingHorizontal": 24,
+        "padding": 24,
       }
     }
   >
