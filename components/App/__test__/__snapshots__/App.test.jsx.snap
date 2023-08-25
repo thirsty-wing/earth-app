@@ -21,6 +21,7 @@ exports[`should render 1`] = `
       <mockConstructor
         screenOptions={
           {
+            "animation": "default",
             "headerShown": false,
           }
         }
