@@ -4,9 +4,23 @@ import { theme } from "../../utils/theme";
 
 
 const styles = StyleSheet.create({
+  countryView: {
+    width: "100%",
+    backgroundColor: theme.palette.action.primary,
+    padding: theme.spacing(),
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: theme.spacing(),
+    borderRadius: 16,
+  },
   scrollView: {
     gap: theme.spacing(),
     padding: theme.spacing(3),
+    flex: 1,
+  },
+  showDataView: {
+    gap: theme.spacing(),
     flex: 1,
   },
   plainText: {
@@ -20,12 +34,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: theme.spacing(3),
   },
   backPressable: {
-    padding: 16,
+    padding: theme.spacing(2),
     backgroundColor: theme.palette.action.primary,
+    borderRadius: 16,
+  },
+  emojiText: {
+    fontSize: theme.sizes.text.title,
   },
   subsectionText: {
     color: theme.palette.text.primary,
     fontSize: theme.sizes.text.subsection,
+    flexWrap: "wrap",
+    flex: 1,
   },
   svgView: {
     backgroundColor: theme.palette.text.primary,

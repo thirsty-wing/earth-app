@@ -62,7 +62,7 @@ function ContinentScreen(props) {
 
 
         { showData &&
-          <>
+          <View style={styles.showDataView}>
             <View style={styles.svgViewWidthWrapper}>
               <View style={styles.svgViewHeightWrapper}>
                 <View style={styles.svgView}>
@@ -85,7 +85,22 @@ function ContinentScreen(props) {
             <Text style={styles.subsectionText}>
               Countries
             </Text>
-          </>
+            {
+              data?.continent?.countries?.map(country => {
+                return (
+                  <View style={styles.countryView} key={`country-${country?.code}`}>
+                    <Text style={styles.emojiText}>
+                      {country?.emoji}
+                    </Text>
+                    <Text style={styles.subsectionText}>
+                      {country?.name}
+                    </Text>
+                  </View>
+
+                );
+              })
+            }
+          </View>
         }
 
       </ScrollView>

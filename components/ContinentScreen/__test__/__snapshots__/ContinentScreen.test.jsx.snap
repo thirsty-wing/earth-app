@@ -17,6 +17,7 @@ exports[`should render 1`] = `
       style={
         {
           "backgroundColor": "#049",
+          "borderRadius": 16,
           "padding": 16,
         }
       }
@@ -59,7 +60,14 @@ exports[`should render 1`] = `
       }
     }
   >
-    <React.Fragment>
+    <View
+      style={
+        {
+          "flex": 1,
+          "gap": 8,
+        }
+      }
+    >
       <View
         style={
           {
@@ -99,6 +107,8 @@ exports[`should render 1`] = `
         style={
           {
             "color": "#EEF",
+            "flex": 1,
+            "flexWrap": "wrap",
             "fontSize": 25,
           }
         }
@@ -137,13 +147,15 @@ exports[`should render 1`] = `
         style={
           {
             "color": "#EEF",
+            "flex": 1,
+            "flexWrap": "wrap",
             "fontSize": 25,
           }
         }
       >
         Countries
       </Text>
-    </React.Fragment>
+    </View>
   </ScrollView>
 </BackgroundView>
 `;
@@ -165,6 +177,7 @@ exports[`should render with ERROR response status 1`] = `
       style={
         {
           "backgroundColor": "#049",
+          "borderRadius": 16,
           "padding": 16,
         }
       }
@@ -237,6 +250,7 @@ exports[`should render with LOADING response status 1`] = `
       style={
         {
           "backgroundColor": "#049",
+          "borderRadius": 16,
           "padding": 16,
         }
       }
