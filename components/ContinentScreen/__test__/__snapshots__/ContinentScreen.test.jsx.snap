@@ -44,7 +44,7 @@ exports[`should render 1`] = `
         style={
           {
             "color": "#EEF",
-            "fontSize": 25,
+            "fontSize": 30,
           }
         }
       />
@@ -99,6 +99,16 @@ exports[`should render 1`] = `
         style={
           {
             "color": "#EEF",
+            "fontSize": 25,
+          }
+        }
+      >
+        Stats
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
           }
         }
       >
@@ -112,6 +122,26 @@ exports[`should render 1`] = `
         }
       >
         Number of countries: 
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Number of languages: 
+        0
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 25,
+          }
+        }
+      >
+        Countries
       </Text>
     </React.Fragment>
   </ScrollView>
@@ -162,7 +192,7 @@ exports[`should render with ERROR response status 1`] = `
         style={
           {
             "color": "#EEF",
-            "fontSize": 25,
+            "fontSize": 30,
           }
         }
       />
@@ -234,7 +264,7 @@ exports[`should render with LOADING response status 1`] = `
         style={
           {
             "color": "#EEF",
-            "fontSize": 25,
+            "fontSize": 30,
           }
         }
       />

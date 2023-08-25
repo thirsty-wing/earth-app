@@ -3,6 +3,7 @@ import { ActivityIndicator, ScrollView, Text, View, Pressable } from "react-nati
 import BackgroundView from "../BackgroundView";
 import ContinentSvg from "../ContinentSvg";
 import styles from "./ContinentScreen.styles";
+import { numberOfLanguages } from "./ContinentScreen.utils";
 
 
 /**
@@ -69,11 +70,20 @@ function ContinentScreen(props) {
                 </View>
               </View>
             </View>
+            <Text style={styles.subsectionText}>
+              Stats
+            </Text>
             <Text style={styles.plainText}>
               Two letter code: {data?.continent?.code}
             </Text>
             <Text style={styles.plainText}>
               Number of countries: {data?.continent?.countries?.length}
+            </Text>
+            <Text style={styles.plainText}>
+              Number of languages: {numberOfLanguages(data?.continent?.countries)}
+            </Text>
+            <Text style={styles.subsectionText}>
+              Countries
             </Text>
           </>
         }

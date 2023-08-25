@@ -26,7 +26,7 @@ function BackgroundView(props) {
         ...styles.root,
 
         // contain children in safe area
-        paddingTop: insets.top,
+        paddingTop: insets.top || 12,
         paddingBottom: insets.bottom,
         paddingLeft: insets.left,
         paddingRight: insets.right,

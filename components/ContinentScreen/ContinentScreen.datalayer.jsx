@@ -30,6 +30,9 @@ function ContinentScreenDatalayer(props) {
           code
           emoji
           name
+          languages {
+            code
+          }
         }
         name
       }

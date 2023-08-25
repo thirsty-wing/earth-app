@@ -23,6 +23,10 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: theme.palette.action.primary,
   },
+  subsectionText: {
+    color: theme.palette.text.primary,
+    fontSize: theme.sizes.text.subsection,
+  },
   svgView: {
     backgroundColor: theme.palette.text.primary,
     padding: theme.spacing(),
@@ -49,7 +53,7 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: theme.palette.text.primary,
-    fontSize: theme.sizes.text.subsection,
+    fontSize: theme.sizes.text.section,
   },
 });
 
