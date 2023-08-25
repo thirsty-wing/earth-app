@@ -2,34 +2,39 @@
 
 exports[`should render 1`] = `
 <SafeAreaProvider>
-  <ForwardRef(NavigationContainerInner)
-    linking={
-      {
-        "config": {
-          "screens": {
-            "Continent": "continent/:code",
-            "Home": "",
-          },
-        },
-      }
-    }
+  <mockConstructor
+    client={mockConstructor {}}
   >
-    <mockConstructor
-      screenOptions={
+    <ForwardRef(NavigationContainerInner)
+      linking={
         {
-          "headerShown": false,
+          "config": {
+            "screens": {
+              "Continent": "continent/:code",
+              "Home": "",
+            },
+          },
+          "prefixes": [],
         }
       }
     >
       <mockConstructor
-        component={[Function]}
-        name="Home"
-      />
-      <mockConstructor
-        component={[Function]}
-        name="Continent"
-      />
-    </mockConstructor>
-  </ForwardRef(NavigationContainerInner)>
+        screenOptions={
+          {
+            "headerShown": false,
+          }
+        }
+      >
+        <mockConstructor
+          component={[Function]}
+          name="Home"
+        />
+        <mockConstructor
+          component={[Function]}
+          name="Continent"
+        />
+      </mockConstructor>
+    </ForwardRef(NavigationContainerInner)>
+  </mockConstructor>
 </SafeAreaProvider>
 `;

@@ -9,7 +9,8 @@ import styles from "./ContinentScreen.styles";
  *
  * @param {object} props
  * @param {object} [props.data={}]
- * @param {"LOADING"|"ERROR"|"OK"} [props.responseStatus = "OK"]
+ * @param {object} [props.error] ApolloError object
+ * @param {boolean} [props.loading=false]
  * @param {object} [props.navigation]
  * @returns {JSX.Element}
  */
@@ -17,28 +18,33 @@ function ContinentScreen(props) {
 
   const {
     data = {},
-    responseStatus = "OK",
+    error,
+    loading: showLoading = false,
     navigation,
   } = props;
+
+  const showError = !showLoading && error;
+
+  const showData = !showLoading && !showError;
 
 
   return(
     <BackgroundView>
       <ScrollView style={styles.scrollView}>
 
-        { responseStatus === "LOADING" &&
+        { showLoading  &&
           <ActivityIndicator size="large" />
         }
 
 
-        { responseStatus === "ERROR" &&
+        { showError &&
             <Text style={styles.plainText}>
               Something went wrong
             </Text>
         }
 
 
-        { responseStatus === "OK" &&
+        { showData &&
           <>
             <View style={styles.topView}>
               <Pressable

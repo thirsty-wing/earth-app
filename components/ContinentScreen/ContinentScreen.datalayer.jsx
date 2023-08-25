@@ -1,5 +1,7 @@
-import useFetchEarth from "../../utils/hooks/useFetchEarth";
+import { gql, useQuery } from "@apollo/client";
+
 import ContinentScreen from "./ContinentScreen";
+
 
 /**
  * Shows the continent screen with data
@@ -20,11 +22,8 @@ function ContinentScreenDatalayer(props) {
 
   const code = route?.params?.code;
 
-  const [
-    data,
-    responseStatus,
-  ] = useFetchEarth(
-    `query{
+  const GET_CONTINENT = gql`
+    query{
       continent(code: "${code}") {
         name
         code
@@ -34,13 +33,20 @@ function ContinentScreenDatalayer(props) {
           emoji
         }
       }
-    }`
-  );
+    }
+  `;
+
+  const {
+    data,
+    error,
+    loading,
+  } = useQuery(GET_CONTINENT);
 
   return(
     <ContinentScreen
       data={data}
-      responseStatus={responseStatus}
+      error={error}
+      loading={loading}
       navigation={navigation}
     />
   );

@@ -2,10 +2,6 @@ import ContinentScreenDatalayer from "../ContinentScreen.datalayer";
 import { shallow } from "../../../utils/test/shallow";
 
 
-jest.mock("apollo-fetch", () => ({
-  createApolloFetch: () => jest.fn(),
-}));
-
 it("should render", () => {
 
   const route = {
