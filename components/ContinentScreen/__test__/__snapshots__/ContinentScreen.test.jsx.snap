@@ -24,7 +24,7 @@ exports[`should render 1`] = `
         <Memo(Pressable)
           style={
             {
-              "backgroundColor": "#01A",
+              "backgroundColor": "#049",
               "padding": 16,
             }
           }
@@ -52,7 +52,7 @@ exports[`should render 1`] = `
             style={
               {
                 "color": "#EEF",
-                "fontSize": 35,
+                "fontSize": 25,
               }
             }
           />

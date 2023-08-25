@@ -43,88 +43,163 @@ exports[`should render with continents 1`] = `
     onPress={[Function]}
     style={
       {
-        "backgroundColor": "#115",
+        "backgroundColor": "#049",
         "borderRadius": 16,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
         "padding": 16,
       }
     }
   >
-    <Text
+    <View>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 30,
+          }
+        }
+      >
+        Pangea
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 15,
+          }
+        }
+      >
+        PG
+      </Text>
+    </View>
+    <View
       style={
         {
-          "color": "#EEF",
+          "alignItems": "center",
+          "backgroundColor": "#EEF",
+          "borderRadius": 16,
+          "display": "flex",
+          "height": 125,
+          "justifyContent": "center",
+          "padding": 8,
+          "width": 125,
         }
       }
     >
-      Pangea
-    </Text>
-    <Text
-      style={
-        {
-          "color": "#EEF",
-        }
-      }
-    >
-      PG
-    </Text>
+      <ContinentSvg
+        code="PG"
+      />
+    </View>
   </Memo(Pressable)>
   <Memo(Pressable)
     onPress={[Function]}
     style={
       {
-        "backgroundColor": "#115",
+        "backgroundColor": "#049",
         "borderRadius": 16,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
         "padding": 16,
       }
     }
   >
-    <Text
+    <View>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 30,
+          }
+        }
+      >
+        Gondwana
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 15,
+          }
+        }
+      >
+        GW
+      </Text>
+    </View>
+    <View
       style={
         {
-          "color": "#EEF",
+          "alignItems": "center",
+          "backgroundColor": "#EEF",
+          "borderRadius": 16,
+          "display": "flex",
+          "height": 125,
+          "justifyContent": "center",
+          "padding": 8,
+          "width": 125,
         }
       }
     >
-      Gondwana
-    </Text>
-    <Text
-      style={
-        {
-          "color": "#EEF",
-        }
-      }
-    >
-      GW
-    </Text>
+      <ContinentSvg
+        code="GW"
+      />
+    </View>
   </Memo(Pressable)>
   <Memo(Pressable)
     onPress={[Function]}
     style={
       {
-        "backgroundColor": "#115",
+        "backgroundColor": "#049",
         "borderRadius": 16,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
         "padding": 16,
       }
     }
   >
-    <Text
+    <View>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 30,
+          }
+        }
+      >
+        Pannotia
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 15,
+          }
+        }
+      >
+        PN
+      </Text>
+    </View>
+    <View
       style={
         {
-          "color": "#EEF",
+          "alignItems": "center",
+          "backgroundColor": "#EEF",
+          "borderRadius": 16,
+          "display": "flex",
+          "height": 125,
+          "justifyContent": "center",
+          "padding": 8,
+          "width": 125,
         }
       }
     >
-      Pannotia
-    </Text>
-    <Text
-      style={
-        {
-          "color": "#EEF",
-        }
-      }
-    >
-      PN
-    </Text>
+      <ContinentSvg
+        code="PN"
+      />
+    </View>
   </Memo(Pressable)>
 </View>
 `;

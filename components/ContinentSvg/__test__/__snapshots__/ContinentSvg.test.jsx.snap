@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render when Africa code is passed in 1`] = `<Africa />`;
+
+exports[`should render when Antarctica code is passed in 1`] = `<Antarctica />`;
+
+exports[`should render when Asia code is passed in 1`] = `<Asia />`;
+
+exports[`should render when Europe code is passed in 1`] = `<Europe />`;
+
+exports[`should render when North America code is passed in 1`] = `<NorthAmerica />`;
+
+exports[`should render when Oceania code is passed in 1`] = `<Oceania />`;
+
+exports[`should render when South America code is passed in 1`] = `<SouthAmerica />`;
+
+exports[`should render when no code is passed in 1`] = `<React.Fragment />`;
