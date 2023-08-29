@@ -2,62 +2,119 @@
 
 exports[`should render 1`] = `
 <BackgroundView>
-  <ScrollView
+  <View
     style={
       {
-        "gap": 8,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
         "paddingHorizontal": 24,
+        "width": "100%",
       }
     }
   >
-    <React.Fragment>
+    <Memo(Pressable)
+      style={
+        {
+          "backgroundColor": "#049",
+          "borderRadius": 16,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Back
+      </Text>
+    </Memo(Pressable)>
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 30,
+          }
+        }
+      />
+    </View>
+  </View>
+  <ScrollView
+    style={
+      {
+        "flex": 1,
+        "gap": 8,
+        "padding": 24,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flex": 1,
+          "gap": 8,
+        }
+      }
+    >
       <View
         style={
           {
-            "display": "flex",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
             "width": "100%",
           }
         }
       >
-        <Memo(Pressable)
-          style={
-            {
-              "backgroundColor": "#01A",
-              "padding": 16,
-            }
-          }
-        >
-          <Text
-            style={
-              {
-                "color": "#EEF",
-              }
-            }
-          >
-            Back
-          </Text>
-        </Memo(Pressable)>
         <View
           style={
             {
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "center",
+              "paddingBottom": "100%",
             }
           }
         >
-          <Text
+          <View
             style={
               {
-                "color": "#EEF",
-                "fontSize": 35,
+                "alignItems": "center",
+                "backgroundColor": "#EEF",
+                "borderRadius": 16,
+                "bottom": 0,
+                "display": "flex",
+                "justifyContent": "center",
+                "left": 0,
+                "padding": 8,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
               }
             }
-          />
+          >
+            <ContinentSvg />
+          </View>
         </View>
       </View>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "flex": 1,
+            "flexWrap": "wrap",
+            "fontSize": 25,
+          }
+        }
+      >
+        Stats
+      </Text>
       <Text
         style={
           {
@@ -76,18 +133,90 @@ exports[`should render 1`] = `
       >
         Number of countries: 
       </Text>
-    </React.Fragment>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Number of languages: 
+        0
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "flex": 1,
+            "flexWrap": "wrap",
+            "fontSize": 25,
+          }
+        }
+      >
+        Countries
+      </Text>
+    </View>
   </ScrollView>
 </BackgroundView>
 `;
 
 exports[`should render with ERROR response status 1`] = `
 <BackgroundView>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "width": "100%",
+      }
+    }
+  >
+    <Memo(Pressable)
+      style={
+        {
+          "backgroundColor": "#049",
+          "borderRadius": 16,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Back
+      </Text>
+    </Memo(Pressable)>
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 30,
+          }
+        }
+      />
+    </View>
+  </View>
   <ScrollView
     style={
       {
+        "flex": 1,
         "gap": 8,
-        "paddingHorizontal": 24,
+        "padding": 24,
       }
     }
   >
@@ -106,11 +235,61 @@ exports[`should render with ERROR response status 1`] = `
 
 exports[`should render with LOADING response status 1`] = `
 <BackgroundView>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 24,
+        "width": "100%",
+      }
+    }
+  >
+    <Memo(Pressable)
+      style={
+        {
+          "backgroundColor": "#049",
+          "borderRadius": 16,
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+          }
+        }
+      >
+        Back
+      </Text>
+    </Memo(Pressable)>
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#EEF",
+            "fontSize": 30,
+          }
+        }
+      />
+    </View>
+  </View>
   <ScrollView
     style={
       {
+        "flex": 1,
         "gap": 8,
-        "paddingHorizontal": 24,
+        "padding": 24,
       }
     }
   >

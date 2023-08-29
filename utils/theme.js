@@ -3,7 +3,7 @@ const SPACING = 8;
 export const theme = {
   palette: {
     action: {
-      primary: "#01A",
+      primary: "#049",
       secondary: "#771",
     },
     background: {
@@ -17,11 +17,11 @@ export const theme = {
   sizes: {
     text: {
       title: 50,
-      subtitle: 45,
-      section: 40,
-      subsection: 35,
-      subsubsection: 30,
-      plain: 16,
+      subtitle: 40,
+      section: 30,
+      subsection: 25,
+      subsubsection: 20,
+      plain: 15,
     },
   },
   spacing: factor => factor ? factor * SPACING : SPACING,

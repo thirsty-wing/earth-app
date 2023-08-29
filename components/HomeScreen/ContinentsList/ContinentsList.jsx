@@ -3,6 +3,8 @@ import { useNavigation } from "@react-navigation/native";
 
 import { theme } from "../../../utils/theme";
 import { yieldDoNavigate } from "./ContinentsList.utils";
+import ContinentSvg from "../../ContinentSvg";
+import styles from "./ContinentsList.styles";
 
 
 /**
@@ -28,12 +30,7 @@ function ContinentsList(props) {
   const showData = !showLoading && !showError;
 
   return(
-    <View
-      style={{
-        flex: 1,
-        gap: theme.spacing(),
-      }}
-    >
+    <View style={styles.rootView}>
 
       { showLoading &&
         <ActivityIndicator size="large"/>
@@ -49,19 +46,20 @@ function ContinentsList(props) {
         data?.continents?.map(continent => (
           <Pressable
             key={`continent-${continent.code}`}
-            style={{
-              backgroundColor: theme.palette.background.offColor,
-              borderRadius: 16,
-              padding: 16
-            }}
+            style={styles.continentPressable}
             onPress={yieldDoNavigate({ navigation, code: continent.code })}
           >
-            <Text style={{ color: theme.palette.text.primary }}>
-              {continent.name}
-            </Text>
-            <Text style={{ color: theme.palette.text.primary }}>
-              {continent.code}
-            </Text>
+            <View>
+              <Text style={styles.continentName}>
+                {continent.name}
+              </Text>
+              <Text style={styles.continentCode}>
+                {continent.code}
+              </Text>
+            </View>
+            <View style={styles.svgView}>
+              <ContinentSvg code={continent.code}/>
+            </View>
           </Pressable>
         ))
       }

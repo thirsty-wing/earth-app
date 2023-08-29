@@ -25,13 +25,16 @@ function ContinentScreenDatalayer(props) {
   const GET_CONTINENT = gql`
     query{
       continent(code: "${code}") {
-        name
         code
         countries {
-          name
           code
           emoji
+          name
+          languages {
+            code
+          }
         }
+        name
       }
     }
   `;

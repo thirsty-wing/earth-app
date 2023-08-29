@@ -28,7 +28,12 @@ export function App() {
     <SafeAreaProvider>
       <ApolloProvider client={client}>
         <NavigationContainer linking={linking}>
-          <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Navigator
+            screenOptions={{
+              animation: "default",
+              headerShown: false,
+            }}
+          >
             <Stack.Screen name="Home" component={HomeScreen}/>
             <Stack.Screen name="Continent" component={ContinentScreen}/>
           </Stack.Navigator>
