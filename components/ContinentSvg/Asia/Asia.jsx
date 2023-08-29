@@ -4,7 +4,7 @@ import Svg, { G, Path } from "react-native-svg";
 /**
  * Asia SVG
  *
- * @param {object} props
+ * @param {object} props props to pass along to Svg component
  * @returns {JSX.Element}
  */
 function Asia(props) {

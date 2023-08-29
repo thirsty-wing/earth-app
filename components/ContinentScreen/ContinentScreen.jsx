@@ -10,10 +10,10 @@ import { numberOfLanguages } from "./ContinentScreen.utils";
  * Shows the continent screen
  *
  * @param {object} props
- * @param {object} [props.data={}]
+ * @param {object} [props.data={}] data from the api to be shown
  * @param {object} [props.error] ApolloError object
- * @param {boolean} [props.loading=false]
- * @param {object} [props.navigation]
+ * @param {boolean} [props.loading=false] whether the data is loading
+ * @param {object} [props.navigation] object posessing navigation capabilities
  * @returns {JSX.Element}
  */
 function ContinentScreen(props) {

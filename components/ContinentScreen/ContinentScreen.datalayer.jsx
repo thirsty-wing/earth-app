@@ -7,10 +7,10 @@ import ContinentScreen from "./ContinentScreen";
  * Shows the continent screen with data
  *
  * @param {object} props
- * @param {object} props.route
- * @param {object} props.route.params
- * @param {string} props.route.params.code
- * @param {object} props.navigation
+ * @param {object} props.route route object from react-navigation
+ * @param {object} props.route.params params in route object
+ * @param {string} props.route.params.code the continent two-letter code
+ * @param {object} props.navigation object posessing navigation capabilities
  * @returns {JSX.Element}
  */
 function ContinentScreenDatalayer(props) {
