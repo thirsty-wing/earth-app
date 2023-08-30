@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
   },
   continentName: {
     color: theme.palette.text.primary,
-    fontSize: theme.sizes.text.section,
+    fontSize: theme.sizes.text.subsection,
+    flexWrap: "wrap",
   },
   continentCode: {
     color: theme.palette.text.primary,

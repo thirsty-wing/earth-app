@@ -48,7 +48,7 @@ function ContinentsList(props) {
             style={styles.continentPressable}
             onPress={yieldDoNavigate({ navigation, code: continent.code })}
           >
-            <View>
+            <View style={{ display: "flex", flexDirection: "column", flex: 1 }}>
               <Text style={styles.continentName}>
                 {continent.name}
               </Text>
