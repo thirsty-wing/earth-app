@@ -1,6 +1,6 @@
 /**
  * @typedef language
- * @property {string} code
+ * @property {string} code two letter code representing a language
  */
 
 /**
@@ -12,7 +12,7 @@
  * Given an array of countries, return the number of unique languages
  *
  * @param {country[]} [countries]
- * @returns {number}
+ * @returns {number} number of unique languages
  */
 export function numberOfLanguages(countries) {
 
