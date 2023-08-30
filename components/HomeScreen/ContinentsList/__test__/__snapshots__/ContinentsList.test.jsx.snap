@@ -52,12 +52,21 @@ exports[`should render with continents 1`] = `
       }
     }
   >
-    <View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+        }
+      }
+    >
       <Text
         style={
           {
             "color": "#EEF",
-            "fontSize": 30,
+            "flexWrap": "wrap",
+            "fontSize": 25,
           }
         }
       >
@@ -106,12 +115,21 @@ exports[`should render with continents 1`] = `
       }
     }
   >
-    <View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+        }
+      }
+    >
       <Text
         style={
           {
             "color": "#EEF",
-            "fontSize": 30,
+            "flexWrap": "wrap",
+            "fontSize": 25,
           }
         }
       >
@@ -160,12 +178,21 @@ exports[`should render with continents 1`] = `
       }
     }
   >
-    <View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+        }
+      }
+    >
       <Text
         style={
           {
             "color": "#EEF",
-            "fontSize": 30,
+            "flexWrap": "wrap",
+            "fontSize": 25,
           }
         }
       >

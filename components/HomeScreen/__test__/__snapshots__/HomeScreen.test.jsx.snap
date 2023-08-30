@@ -5,6 +5,7 @@ exports[`should render 1`] = `
   <View
     style={
       {
+        "paddingBottom": 8,
         "paddingHorizontal": 24,
       }
     }

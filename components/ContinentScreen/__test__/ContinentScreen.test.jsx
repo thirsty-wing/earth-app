@@ -2,7 +2,22 @@ import ContinentScreen from "../ContinentScreen";
 import { shallow } from "../../../utils/test/shallow";
 
 it("should render", () => {
-  const content = shallow(<ContinentScreen/>);
+
+  const data = {
+    continent: {
+      name: "Mu",
+      code: "MU",
+      countries: [{
+        code: "ZK",
+        name: "Zerker",
+        emoji: "🗿",
+        languages: [{
+          code: "ZR",
+        }]
+      }],
+    },
+  };
+  const content = shallow(<ContinentScreen data={data}/>);
 
   expect(content).toMatchSnapshot();
 });

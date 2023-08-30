@@ -8,6 +8,7 @@ exports[`should render 1`] = `
         "display": "flex",
         "flexDirection": "row",
         "justifyContent": "flex-start",
+        "paddingBottom": 8,
         "paddingHorizontal": 24,
         "width": "100%",
       }
@@ -48,14 +49,15 @@ exports[`should render 1`] = `
             "fontSize": 30,
           }
         }
-      />
+      >
+        Mu
+      </Text>
     </View>
   </View>
   <ScrollView
     style={
       {
         "flex": 1,
-        "gap": 8,
         "padding": 24,
       }
     }
@@ -65,6 +67,7 @@ exports[`should render 1`] = `
         {
           "flex": 1,
           "gap": 8,
+          "paddingBottom": 48,
         }
       }
     >
@@ -99,7 +102,9 @@ exports[`should render 1`] = `
               }
             }
           >
-            <ContinentSvg />
+            <ContinentSvg
+              code="MU"
+            />
           </View>
         </View>
       </View>
@@ -123,6 +128,7 @@ exports[`should render 1`] = `
         }
       >
         Two letter code: 
+        MU
       </Text>
       <Text
         style={
@@ -132,6 +138,7 @@ exports[`should render 1`] = `
         }
       >
         Number of countries: 
+        1
       </Text>
       <Text
         style={
@@ -141,7 +148,7 @@ exports[`should render 1`] = `
         }
       >
         Number of languages: 
-        0
+        1
       </Text>
       <Text
         style={
@@ -155,6 +162,42 @@ exports[`should render 1`] = `
       >
         Countries
       </Text>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#049",
+            "borderRadius": 16,
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": 8,
+            "padding": 8,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 50,
+            }
+          }
+        >
+          🗿
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#EEF",
+              "flex": 1,
+              "flexWrap": "wrap",
+              "fontSize": 25,
+            }
+          }
+        >
+          Zerker
+        </Text>
+      </View>
     </View>
   </ScrollView>
 </BackgroundView>
@@ -168,6 +211,7 @@ exports[`should render with ERROR response status 1`] = `
         "display": "flex",
         "flexDirection": "row",
         "justifyContent": "flex-start",
+        "paddingBottom": 8,
         "paddingHorizontal": 24,
         "width": "100%",
       }
@@ -215,7 +259,6 @@ exports[`should render with ERROR response status 1`] = `
     style={
       {
         "flex": 1,
-        "gap": 8,
         "padding": 24,
       }
     }
@@ -241,6 +284,7 @@ exports[`should render with LOADING response status 1`] = `
         "display": "flex",
         "flexDirection": "row",
         "justifyContent": "flex-start",
+        "paddingBottom": 8,
         "paddingHorizontal": 24,
         "width": "100%",
       }
@@ -288,7 +332,6 @@ exports[`should render with LOADING response status 1`] = `
     style={
       {
         "flex": 1,
-        "gap": 8,
         "padding": 24,
       }
     }

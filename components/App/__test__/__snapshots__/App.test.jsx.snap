@@ -18,6 +18,10 @@ exports[`should render 1`] = `
         }
       }
     >
+      <StatusBar
+        backgroundColor="#003"
+        barStyle="light-content"
+      />
       <mockConstructor
         screenOptions={
           {
