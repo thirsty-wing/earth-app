@@ -7,9 +7,9 @@
  * yieldRotateGlobe.
  *
  * @param {object} args
- * @param {number} args.globeOrientation
- * @param {function} args.setGlobeOrientation
- * @returns {rotateGlobe}
+ * @param {number} args.globeOrientation current state of globe orientation
+ * @param {function} args.setGlobeOrientation set function for globe orientation
+ * @returns {rotateGlobe} function that when called will call args.setGlobeOrientation with the next value in the sequence
  */
 export function yieldRotateGlobe(args) {
 
@@ -32,7 +32,7 @@ export function yieldRotateGlobe(args) {
 /**
  * getGlobe.
  *
- * @param {number} globeOrientation
+ * @param {number} globeOrientation current globe represented as 1, 2, or 3
  * @returns {string} a globe emoji in one of three orientations
  */
 export function getGlobe(globeOrientation) {

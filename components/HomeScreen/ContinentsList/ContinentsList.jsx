@@ -1,7 +1,6 @@
 import { Text, View, ActivityIndicator, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-import { theme } from "../../../utils/theme";
 import { yieldDoNavigate } from "./ContinentsList.utils";
 import ContinentSvg from "../../ContinentSvg";
 import styles from "./ContinentsList.styles";
@@ -11,9 +10,9 @@ import styles from "./ContinentsList.styles";
  * List of continents as pressables
  *
  * @param {object} props
- * @param {object} [props.data]
+ * @param {object} [props.data] data about continents to be shown
  * @param {object} [props.error] ApolloError
- * @param {boolean} [props.loading = false]
+ * @param {boolean} [props.loading = false] whether the data is being fetched
  */
 function ContinentsList(props) {
 

@@ -1,19 +1,33 @@
 /**
+ * @typedef language
+ * @property {string} code two letter code representing a language
+ */
+
+/**
+ * @typedef country
+ * @property {language[]} languages
+ */
+
+/**
  * Given an array of countries, return the number of unique languages
  *
- * @param {object[]} [countries]
- * @returns {number}
+ * @param {country[]} [countries]
+ * @returns {number} number of unique languages
  */
 export function numberOfLanguages(countries) {
 
-  return new Set( // remove duplicates
-    countries?.map( // in each country
-      country => country?.languages?.map( // in each language
-        language => language?.code // get the language code
-      )
+  const languagesSet = new Set();
+
+  countries?.forEach( // in each country
+    country => country?.languages?.forEach( // in each language
+      language => {
+        if (language?.code) {
+          languagesSet.add(language?.code); // add language code to Set
+        }
+      }
     )
-      .flat() // flatten the array of arrays containing language codes
-      .filter(languageCode => !!languageCode) // remove falsy values
-  ).size; // return number of languages
+  );
+
+  return languagesSet.size; // return number of languages
 }
 

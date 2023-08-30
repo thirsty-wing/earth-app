@@ -23,6 +23,11 @@ const linking = {
   prefixes: [],
 };
 
+/**
+ * The top component of the app.
+ *
+ * @returns {JSX.Element}
+ */
 export function App() {
   return (
     <SafeAreaProvider>

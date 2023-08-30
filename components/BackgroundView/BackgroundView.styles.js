@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { theme } from "../../utils/theme";
 
+export const DEFAULT_TOP_PADDING = 12;
 
 export const styles = StyleSheet.create({
   root: {

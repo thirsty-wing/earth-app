@@ -10,6 +10,9 @@ import { yieldRotateGlobe } from "./Title.utils";
  */
 function TitleDatalayer() {
 
+  /**
+   * @type {[1|2|3, function]}
+   */
   const [globeOrientation, setGlobeOrientation] = useState(1);
 
   return(

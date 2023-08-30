@@ -11,8 +11,8 @@ import SouthAmerica from "./SouthAmerica";
  * Continent SVG based on code prop
  *
  * @param {object} props
- * @param {string} [props.code]
- * @returns {JSX.Element}
+ * @param {string} [props.code] a two-letter code for a continent
+ * @returns {JSX.Element} a continent SVG or a fragment if the code was invalid
  */
 function ContinentSvg(props) {
 
