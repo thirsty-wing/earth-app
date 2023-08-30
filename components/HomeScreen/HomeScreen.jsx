@@ -1,8 +1,8 @@
 import { View, ScrollView } from "react-native";
-import { theme } from "../../utils/theme";
 import BackgroundView from "../BackgroundView";
 import Title from "./Title";
 import ContinentsList from "./ContinentsList";
+import { styles } from "./HomeScreen.styles";
 
 
 
@@ -13,19 +13,12 @@ import ContinentsList from "./ContinentsList";
  */
 function HomeScreen() {
 
-  const paddingHorizontal = theme.spacing(3);
-
   return(
     <BackgroundView>
-      <View style={{ paddingHorizontal }}>
+      <View style={styles.titleView}>
         <Title/>
       </View>
-      <ScrollView
-        style={{
-          gap: theme.spacing(),
-          paddingHorizontal,
-        }}
-      >
+      <ScrollView style={styles.continentsListView}>
         <ContinentsList/>
       </ScrollView>
     </BackgroundView>
