@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { DEFAULT_TOP_PADDING, styles } from "./BackgroundView.styles";
+import { styles } from "./BackgroundView.styles";
 
 
 /**
@@ -23,13 +23,13 @@ function BackgroundView(props) {
   return(
     <View
       style={{
-        ...styles.root,
-
         // contain children in safe area
-        paddingTop: insets.top || DEFAULT_TOP_PADDING,
+        paddingTop: insets.top,
         paddingBottom: insets.bottom,
         paddingLeft: insets.left,
         paddingRight: insets.right,
+
+        ...styles.root,
       }}
     >
       { children }

@@ -15,13 +15,13 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   scrollView: {
-    gap: theme.spacing(),
     padding: theme.spacing(3),
     flex: 1,
   },
   showDataView: {
-    gap: theme.spacing(),
     flex: 1,
+    gap: theme.spacing(),
+    paddingBottom: theme.spacing(6),
   },
   plainText: {
     color: theme.palette.text.primary,
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     flexDirection: "row",
     paddingHorizontal: theme.spacing(3),
+    paddingBottom: theme.spacing(),
   },
   backPressable: {
     padding: theme.spacing(2),

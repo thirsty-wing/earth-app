@@ -2,6 +2,8 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { StatusBar } from "react-native";
+import { theme } from "../../utils/theme";
 
 import HomeScreen from "../HomeScreen";
 import ContinentScreen from "../ContinentScreen";
@@ -33,6 +35,10 @@ export function App() {
     <SafeAreaProvider>
       <ApolloProvider client={client}>
         <NavigationContainer linking={linking}>
+          <StatusBar
+            barStyle="light-content"
+            backgroundColor={theme.palette.background.primary}
+          />
           <Stack.Navigator
             screenOptions={{
               animation: "default",
